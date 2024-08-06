@@ -45,7 +45,7 @@ eval(dpDa)
 # create plot for bill length vs depth ----
 ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
   geom_point(aes(color = species)) +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  scale_color_manual(values = c("forestgreen","maroon","turquoise")) +
   labs(x = "Bill Length (mm)",
        y = "Bill Depth (mm)",
        title = "Palmer penguin measurement comparison",
