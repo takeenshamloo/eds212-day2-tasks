@@ -59,7 +59,7 @@ ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
 # create jitter plot for flipper length by species 
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_jitter(aes(color = species)) +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  scale_color_manual(values = c("pink","green","blue")) +
   labs(x = "Species",
        y = "Flipper length (mm)",
        title = "Palmer penguin measurement comparison",
