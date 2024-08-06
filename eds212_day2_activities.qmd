@@ -2,6 +2,8 @@
 title: "eds212_day2_activities"
 author: "Takeen Shamloo"
 format: html
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## Section 2: Derivatives in R
@@ -11,4 +13,31 @@ format: html
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+# Derivatives using R ----
+
+```{r}
+# Function f(x) = x^2 at x = 3 ----
+dfDx <- D(expression(x^2), "x")
+
+# Setting x = 3 ----
+x <- 3
+
+# Evaluate dfDx at x = 3 ----
+eval(dfDx)
+```
+
+
+```{r}
+# Function P(a) = 2(3a + 2)^4 - 5 a = 1.2 ----
+dpDa <- D(expression(2 * (3 * a + 2)^4 - 5), "a")
+
+# Setting a = 1.2 ----
+a <- 1.2
+
+# Evaluating dpDa at a = 1.2 ----
+eval(dpDa)
+```
+
+
 
