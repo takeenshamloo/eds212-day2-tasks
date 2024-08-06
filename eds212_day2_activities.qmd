@@ -1,0 +1,14 @@
+---
+title: "eds212_day2_activities"
+author: "Takeen Shamloo"
+format: html
+---
+
+## Section 2: Derivatives in R
+
+```{r}
+# Loading packages ----
+library(tidyverse)
+library(palmerpenguins)
+```
+
